@@ -13,6 +13,11 @@ def extrude(image, sprites):
 		width = atlas["frames"][frame]["sourceSize"]["w"]
 		height = atlas["frames"][frame]["sourceSize"]["h"]
 
+		pixels[x - 1, y - 1] = pixels[x, y]
+		pixels[x - 1, y + height] = pixels[x, y + height - 1]
+		pixels[x + width, y - 1] = pixels[x + width - 1, y]
+		pixels[x + width, y + height] = pixels[x + width - 1, y + height - 1]
+
 		for y in range(y, y + height):
 			pixels[x - 1, y] = pixels[x, y]
 			pixels[x + width, y] = pixels[x + width - 1, y]
