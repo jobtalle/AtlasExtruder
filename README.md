@@ -1,5 +1,5 @@
 # AtlasExtruder
-Extrude sprite frames on exported [Aseprite](https://github.com/aseprite/aseprite) atlases.
+Extrude sprite frames on exported [Aseprite](https://github.com/aseprite/aseprite) atlases. This script uses [Pillow](https://python-pillow.org/) to edit the atlas image.
 
 ![alt text](example.gif "Example")
 
